@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C03386B-B9B2-4963-A114-80C732B180EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Ghosts.My.MyApplication</StartupObject>
+    <RootNamespace>Ghosts</RootNamespace>
+    <AssemblyName>Ghosts</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>13</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ghosts.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Ghosts.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D49A35DA1E4CC08272E843019995706FC52BC57A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Ghosts_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AIModule.vb" />
+    <Compile Include="DifficultySelection.Designer.vb">
+      <DependentUpon>DifficultySelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DifficultySelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrawBoardModule.vb" />
+    <Compile Include="GameModule.vb" />
+    <Compile Include="GeneralModule.vb" />
+    <Compile Include="HelpInformation.Designer.vb">
+      <DependentUpon>HelpInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HelpInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HighScores.Designer.vb">
+      <DependentUpon>HighScores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HighScores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.vb">
+      <DependentUpon>Help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PlayGhosts.Designer.vb">
+      <DependentUpon>PlayGhosts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlayGhosts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReplayGame.Designer.vb">
+      <DependentUpon>ReplayGame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReplayGame.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectReplay.Designer.vb">
+      <DependentUpon>SelectReplay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectReplay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DifficultySelection.resx">
+      <DependentUpon>DifficultySelection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpInformation.resx">
+      <DependentUpon>HelpInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HighScores.resx">
+      <DependentUpon>HighScores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayGhosts.resx">
+      <DependentUpon>PlayGhosts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReplayGame.resx">
+      <DependentUpon>ReplayGame.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectReplay.resx">
+      <DependentUpon>SelectReplay.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ghosts_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Tutorial.ppsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60by60Ghost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60by60GreenGhost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60by60RedArrowDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60by60RedArrowLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60by60RedArrowRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60by60RedArrowUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60by60RedGhost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlackSquare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GhostsHelpFile.chm" />
+    <None Include="Resources\GreenSquare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrangeSquare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedSquare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60by60PaleGreenGhost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60by60PaleRedGhost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SingleBlankStep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuBanner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+    <None Include="Resources\Help_PlayingGames_2.png" />
+    <None Include="Resources\Help_PlayingGames_6.png" />
+    <None Include="Resources\Help_PlayingGames_5.png" />
+    <None Include="Resources\Help_PlayingGames_4.png" />
+    <None Include="Resources\Help_PlayingGames_3.png" />
+    <None Include="Resources\Help_PlayingGames_1.png" />
+    <None Include="Resources\Help_HighScores_2.png" />
+    <None Include="Resources\Help_HighScores_1.png" />
+    <None Include="Resources\Help_ReplayingGames_6.png" />
+    <None Include="Resources\Help_ReplayingGames_5.png" />
+    <None Include="Resources\Help_ReplayingGames_4.png" />
+    <None Include="Resources\Help_ReplayingGames_3.png" />
+    <None Include="Resources\Help_ReplayingGames_2.png" />
+    <None Include="Resources\Help_ReplayingGames_1.png" />
+    <None Include="Resources\Help_GameRules_Winning_1.png" />
+    <None Include="Resources\Help_GameRules_TakingPieces_2.png" />
+    <None Include="Resources\Help_GameRules_TakingPieces_1.png" />
+    <None Include="Resources\Help_GameRules_Moving_1.png" />
+    <None Include="Resources\Help_GameRules_ChoosingPieces_2.png" />
+    <None Include="Resources\Help_GameRules_ChoosingPieces_1.png" />
+    <None Include="Resources\Help_GameRules_AvoidingDefeat_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
